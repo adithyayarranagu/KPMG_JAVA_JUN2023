@@ -1,0 +1,147 @@
+1.	Write a Java program to get a number from the user and print whether it is positive or negative.
+
+Sample Output
+Input number: 35
+Expected Output :
+Number is positive
+
+package com.kpmg.basics;
+
+public class Number{
+	
+	static int x=12;
+	static int y=-1;
+	
+	public static void num(int x){
+		if(x<0)
+			System.out.println("Number is negative");
+		else if (x>0)
+			System.out.println("Number is positive");
+	}
+
+	public static void main(String[] args){
+		Number.num(x);
+		Number.num(y);
+	}
+
+}
+
+2.	Take three numbers from the user and print the greatest number
+
+Sample Output
+Input the 1st number: 25
+Input the 2nd number: 78
+Input the 3rd number: 87
+Expected Output :
+The greatest: 87
+
+package com.kpmg.basics;
+
+public class GreatestNumber{
+	
+	static int x=12;
+	static int y=13;
+	static int z=14;
+	
+	public static void greatest(int x,int y,int z){
+	    if(x>y&&x>z)
+	    System.out.println("The greatest: "+x);
+	    else if (y>x&&y>z)
+	     System.out.println("The greatest: "+y);
+	    else if (z>x&&z>y)
+	     System.out.println("The greatest: "+z);
+	     else
+	      System.out.println("All three are equal");
+	}
+
+	public static void main(String[] args){
+		GreatestNumber.greatest(x,y,z);
+	}
+
+}
+	
+3.	 Write a Java program that keeps a number from the user and generates an integer between 1 and 7 and displays the name of the weekday.
+
+Sample Output
+Input number: 3
+Expected Output :
+Wednesday
+
+package com.kpmg.basics;
+
+public class Week{
+	
+	static int x=7;
+	
+	public static void weekday(int x){
+	    switch(x){
+	        case 1: System.out.println("Monday");
+	        break;
+	        case 2: System.out.println("Tuesday");
+	        break;
+	        case 3: System.out.println("Wednesday");
+	        break;
+	        case 4: System.out.println("Thursday");
+	        break;
+	        case 5: System.out.println("Friday");
+	        break;
+	        case 6: System.out.println("Saturday");
+	        break;
+	        case 7: System.out.println("Sunday");
+	        break;
+	        default: System.out.println("Please enter a number between (inclusive of) 1 and 7");
+	    }
+	}
+
+	public static void main(String[] args){
+		Week.weekday(x);
+	}
+
+}
+
+4.	Write a program in Java to display the first 10 natural numbers
+package com.kpmg.basics;
+
+public class NaturalNumbers{
+	public static void print(){
+	    for(int i=1;i<=10;i++)
+	    System.out.println(i);
+	}
+	public static void main(String[] args){
+		NaturalNumbers.print();
+	}
+
+}
+5.	Write a program in Java to input 5 numbers from keyboard and find their sum and average
+Sample Output
+Input the 5 numbers : 1 2 3 4 5
+Expected Output :
+Input the 5 numbers :                                                            
+1                                                                                
+2                                                                                
+3                                                                                
+4	                                                                               
+       5                                                                                
+The sum of 5 no is : 15                                                          
+The Average is : 3.0  
+
+package com.kpmg.basics;
+public class Number{
+	static int x=10;
+	static int y=20;
+	static int z=10;
+	static int a=20;
+	static int b=20;
+	public static void sum(int x,int y,int z,int a,int b){
+	    int sum;
+	    sum=(x+y+z+a+b);
+	    System.out.println("The sum of 5 no is: "+sum);
+	}
+	public static void main(String[] args){
+		Number.sum(x,y,z,a,b);
+	}
+}
+
+6.	Write a program to take employee information using scanner like employee id, employee name, employee salary, employee address ,employee contact, employee gender(char)
+
+
